@@ -1,0 +1,87 @@
+@font-face{
+    font-family: 'Aboreto', cursive;
+    src: url("fonts/Aboreto-Regular.ttf");
+}
+h1{
+    font-family: 'Aboreto', cursive;
+}
+
+h2{
+    color: midnightblue;
+    font-family: 'Aboreto', cursive;
+}
+
+#main
+{
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    justify-content: center;
+    background-color: tan;
+}
+#navbar, #navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#navbar li {
+    background-color: rgb(252, 180, 180);
+
+    /* width of #main = 600px
+    #of top level menu option = 4
+    600px/4 = 150px per menu option
+    */
+    width: 150px;
+    text-align: center;
+    position: relative;
+}
+
+#navbar {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(252, 180, 180);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0; 
+    z-index: 1;
+}
+
+#navbar a:hover {
+    border-bottom: 2px solid rgb(249, 255, 158);
+    color: white;
+    background-color: #900;
+}
+#navbar a {
+    text-decoration: none;
+    color: #FFF;
+    height: 50px;
+    line-height: 50px;
+    display: block; 
+}
+#navbar ul {
+    position: absolute;
+    display: none;
+
+}
+#navbar ul ul {
+    left: 150px;
+    top: 0px;
+
+}
+#navbar li:hover > ul {
+    display: block;
+}
+
+#footer{
+    background-color: #777;
+    color: white;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    line-height: 50px;
+    background-color: green;
+
+}

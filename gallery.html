@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="shared3.css">
+
+    <style>
+        #header {
+            background-image:url('img/gallery-header.jpg');
+            background-size: cover;
+            height: 250px;
+            justify-content: center;
+            text-align: center;
+            color: #FFF;
+            font-size: 1.5em;
+            text-align: center;
+            line-height: 250px;
+            text-shadow: 0px 0px 10px #000;
+        }   
+        #gallery{
+            height: 1000px;
+            width: 1000px;
+            margin: 0 auto;
+            align-items: center;
+    
+        }
+        .row{
+            flex-wrap: wrap;
+            height: 40%;
+            padding: 0px 10px;
+            display: flex;
+        }
+        .col{
+            display: flex;
+            float: left;
+            position: relative;
+        }
+        .images{
+            margin: 3px;
+            height: 300px;
+            max-height: 100%;
+            max-width: 100%;
+            object-fit: cover;
+        }
+    
+        #col1 { width: 30%; }
+    
+        #col2 { width: 35%; }
+    
+        #col3 { width: 35%; }
+    
+        #col4 { width: 23%; }
+    
+        #col5 { width: 40%; }
+    
+        #col6 { width: 37%; }
+    
+        #col7 { width: 20%; }
+    
+        #col8 { width: 40%; }
+    
+        #col9 { width: 40%; }
+    
+        #col10 { width: 35%; }
+    
+        .overlay{
+            color: #fff;
+                background-color: #000;
+                text-align: center;
+                padding-top: 150px;
+    
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                left: 0;
+    
+                background-color: rgba(0, 0, 0, 0.6);
+                visibility: hidden;
+        }
+        .col:hover .overlay {
+                /* display: block; */
+                visibility: visible;
+            }
+    
+        .newline{
+            clear: both;
+        }
+    
+    
+        #hereingallery{
+            background-color: #900;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="header">
+        <h1>Even More Food</h1>
+        <!-- <img src="img/pho.png" alt="Pho"> -->
+    </div>
+
+    <ul id="navbar">
+        <li><a href="interests.html">Home</a>
+            <ul>
+                <li><a href="interests.html#matcha-head">Matcha</a></li>
+                <li><a href="interests.html#taco-head">Tacos</a></li>
+                <li><a href="#sushi-head">Sushi</a></li>
+            </ul>
+        </li>
+        <li><a id="hereingallery" href="gallery.html">Gallery</a></li>
+    
+
+	</ul>
+
+<!-- GALLERY -->
+    <div id="gallery">
+<div class="row">
+    <div class="col" id="c7">
+        <img class="images" src="img/img7.jpg" alt="USC Village">
+        <div class="overlay">Hamburger</div>
+    </div>
+    <div class="col" id="c8">
+        <img class="images" src="img/img8.jpg" alt="USC Village">
+        <div class="overlay">French Toast</div>
+    </div>
+    <div class="col" id="c9">
+        <img class="images" src="img/img9.jpg" alt="USC Village">
+        <div class="overlay">Salmon</div>
+    </div>
+    <div class="col" id="c10">
+        <img class="images" src="img/img10.jpg" alt="USC Village">
+        <div class="overlay">Ramen</div>
+    </div>
+    <div class="col" id="c1">
+        <img class="images" src="img/img1.jpg" alt="USC Village">
+        <div class="overlay">Tomahawk Steak</div>
+    </div>
+    <div class="col" id="c2">
+        <img class="images" src="img/img2.jpg" alt="USC Village">
+        <div class="overlay">Raspberry Cake</div>
+    </div>
+    <div class="col" id="c3">
+        <img class="images" src="img/img3.jpg" alt="USC Village">
+        <div class="overlay">Avocado Salad</div>
+    </div>
+    <div class="col" id="c4">
+        <img class="images" src="img/img4.jpg" alt="USC Village">
+        <div class="overlay">Fruity Donuts</div>
+    </div>
+    <div class="col" id="c5">
+        <img class="images" src="img/img5.jpg" alt="USC Village">
+        <div class="overlay">Miso Salmon</div>
+    </div>
+    <div class="col" id="c6">
+        <img class="images" src="img/img6.jpg" alt="USC Village">
+        <div class="overlay">Seafood Pasta</div>
+    </div>
+</div> <!-- .row -->
+<div class="newline"></div>
+
+    </div>	<!--END OF GALLERY -->
+</body>
+</html>
